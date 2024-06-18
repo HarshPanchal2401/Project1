@@ -1,0 +1,711 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lalezar", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.Main {
+    position: relative;
+    border: solid 1px black;
+    width: 23%;
+    height: 700px;
+    margin: 10px auto;
+}
+
+.image img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.logo{
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img
+{
+    filter: invert(90%);
+    width: 15%;
+    border-radius: 100%;
+}
+
+.text
+{
+    padding-top:10px;
+}
+
+.text h1,h3,p
+{
+    color: #2F2F2F;
+    text-align: center;
+    text-shadow: 0 0 10px white;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+
+.text h1
+{
+    overflow: hidden;
+	white-space: nowrap;
+    font-size: 35px;
+    letter-spacing: 10px;
+    animation: text 3s ease-in;
+}
+@keyframes text{
+	0%{
+		width: 0%;
+        margin: 0px 33px;
+	}
+	100%
+	{
+		width: 75%;
+        margin: 0px 33px;
+	}
+}
+
+
+
+.text h3{
+    font-size: 30px;
+    letter-spacing: 7px;
+    line-height: 45px;
+}
+
+.buttons
+{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;   
+}
+
+.buttons .login
+{
+    padding: 15px 0px;
+}
+
+.buttons button
+{
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #2F2F2F;
+    box-shadow: 0 0 5px white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 5px 30px 8px 30px;
+    color: white;
+}
+
+.buttons button:hover
+{
+    background-color: #1b1b1b;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+
+
+
+
+/*  ------------Login-Page--------------   */
+
+.Login{
+    padding: 30px;
+}
+
+.insideLogin{
+    position: relative;
+}
+
+.insideLogin h1
+{
+    text-decoration: underline;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #2F2F2F;  
+}
+
+.user, .psw
+{
+    position: relative;
+}
+
+.insideLogin input{
+    width: 73%;
+    padding: 5px 40px;
+    margin: 15px 0px;
+    background-color: #C0C0C0;
+    border: none;
+    border-radius: 14px;
+    box-shadow: -1px 2px 5px rgb(30, 30, 30);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.insideLogin i
+{
+    position: absolute;
+    font-size: 18px;
+    top: 35%;
+    left : 10px;
+    color: #2F2F2F;
+}
+
+.insideLogin p
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.psw #i
+{
+    position: absolute;
+    top: 35%;
+    left : 88%;
+}
+
+.insideLogin input[type = "submit"]
+{
+    cursor: pointer;
+    background-color: #2F2F2F;
+    color: white;
+    width: 100%;
+}
+
+.OR 
+{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.OR::after 
+{
+    content: " ";
+    position: absolute;
+    border-bottom: solid 1px #2F2F2F;
+    width: 30%;
+    top: 50%;
+    left: 10%;
+}
+
+.OR::before 
+{
+    content: " ";
+    position: absolute;
+    border-bottom: solid 1px #2F2F2F;
+    width:30%;
+    top: 50%;
+    right: 10%;
+}
+
+.cp p
+{
+    cursor: default;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -45%;
+    text-decoration: none;
+}
+
+.cp1 p
+{
+    cursor: default;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20%;
+    text-decoration: none;
+}
+
+.share-image
+{
+
+    display: flex;
+    justify-content: center;
+    padding: 14px 0px;
+}
+
+.share-image img{
+    cursor: pointer;
+    width: 50%;
+}
+
+/*------------ Main Page CSS ----------*/
+
+footer{
+    position: relative;
+}
+
+.MenuBar
+{
+    display: flex;
+    position: fixed;
+    bottom: 17px;
+    width: 23%;
+    border-top: solid 1px;
+    height: 65px;
+    background-color: #D9D9D9;
+}
+
+.MenuBar div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+    font-size: 25px;
+    color: #2F2F2F;
+}
+
+.MenuBar span
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #2F2F2F;
+    border-radius: 100%;
+    top: -31px;
+    left: 19px;
+}
+#i1{
+    bottom: 40px;
+    color: white;
+    border-radius: 100%;
+}
+
+/*-----------First page CSS-------------*/
+#Spage, #Tpage, #FOpage{
+    visibility: hidden;
+}
+
+.first-Page{
+    position: absolute;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.search{
+    position: relative;
+}
+
+.search input{
+    border: none;
+    width: 45%;
+    padding: 5px 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-bottom: solid 1px;
+}
+
+.search i{
+    position: absolute;
+    top: 30%;
+    color: #2F2F2F; 
+}
+
+.search button i{
+    padding: 8px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    background-color: #2F2F2F;
+    border-radius: 5px;
+    top: 0px;
+    right:0px;
+}
+
+.hh {
+    position: absolute;
+    right: 40px;
+    top: -2px;
+}
+
+
+.cityName{
+    background-color: #2F2F2F;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 25px;
+    padding: 5px 20px;
+}
+
+.cityName h3
+{
+    text-shadow: none;
+    color: white;
+    font-size: 25px;
+    padding: 0;
+}
+
+.cityName p
+{
+    text-shadow: none;
+    color:white;
+    line-height: 5px;
+    font-size: 10px;
+}
+
+.quality
+{
+    display: flex;
+    background-color: rgb(254, 132, 132);
+    text-shadow: none;
+    padding: 10px 5px;
+    border-left: solid 1px #2F2F2F;
+    border-right: solid 1px #2F2F2F;
+}
+
+.quality div
+{
+    flex: 50%;
+    padding: 10px;
+}
+.quality h3
+{
+    text-shadow: none;
+    color: #2F2F2F;
+    font-size: 30px;
+    font-weight: 600px;
+    padding: 0px;
+}
+
+.quality p
+{
+    text-shadow: none;
+    color:#2F2F2F;
+    line-height: 0px;
+    font-size: 10px;
+}
+
+.healthy h2
+{
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.healthy p
+{
+    letter-spacing: 1px;
+    font-size: 9px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #2F2F2F;
+    border-radius: 5px;
+    color: white;
+}
+
+.graph-image img{
+    width: 99.4%;
+    border-left: solid 1px #2F2F2F;
+    border-right: solid 1px #2F2F2F;
+}
+
+.description p
+{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    background-color: #2F2F2F;
+    text-shadow: none;
+    color: white;
+}
+
+
+/*--------------Secong Page CSS-------------*/
+
+.Second-Page
+{
+    position: absolute;
+    padding: 20px;
+}
+
+.Header-city h1
+{
+    text-decoration: underline;
+    text-align: center;
+    color: #2F2F2F;
+    padding: 20px;
+}
+
+.Map-image img{
+    cursor: pointer;
+    border: solid;
+    padding: 10px;
+    width: 93%;
+    margin: 20px 0px;
+}
+
+.cityAQI div{
+    border-bottom: solid 1px;
+    line-height: 10px;
+}
+
+.cityAQI p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    padding: 5px 0px;
+
+}
+
+.cityAQI span
+{
+    font-size: 13px;
+    text-align: center;
+    line-height: 10px;
+}
+ 
+/*----------------Third Page CSS---------------*/
+
+
+.Third-Page
+{
+    position: absolute;
+}
+.news{
+    padding: 0px 10px;
+}
+
+.news1{
+    display: flex;
+    padding-bottom: 10px;
+    margin: 30px 0px;
+    border-bottom: solid 1px #aeaeae;
+}
+
+.news1 p
+{
+    flex: 100%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.news1 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+
+/*---------------Fourth Page CSS-------------*/
+
+.Fourth-Page{
+    padding: 20px;
+}
+
+.profile{
+    margin: 30px 0px;
+    display: flex;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.profile1{
+    flex: 90%;
+}
+
+.profile h1{
+    font-size: 28px;
+    color: #2F2F2F;
+    letter-spacing: 2px;
+}
+
+.profile p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 10px;
+    text-align: start;
+}
+
+.profile-img
+{
+    flex: 10%;
+    padding: 10px 22px;
+}
+
+.profile-img img
+{
+    width: 150%;
+    padding: 5px;
+    background-color: #2F2F2F;
+    border-radius: 100%;
+}
+
+.addButton
+{
+    display: flex;
+    justify-content: center;
+}
+
+.addButton button
+{
+    padding: 7px 40px;
+    border: none;
+    background-color: #2F2F2F;
+    color: white;
+    border-radius: 10px;
+}
+
+.addButton i
+{
+    align-items: center;
+    padding-right: 5px;
+}
+
+.setting{
+    padding: 20px 0px;
+}
+
+.s1{
+    display: flex;
+    padding: 10px 0px;
+    border-bottom: solid 1px rgb(179, 179, 179);
+}
+
+.icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5%;
+    color: #2F2F2F;
+}
+
+.des1{
+    padding-left: 10px;
+    flex: 80%;
+}
+
+.des1 p{
+    font-size: 15px;
+    font-weight: 1000;
+    text-align: start;
+    padding: 0;
+}
+
+.des1 span
+{
+    font-size: 12px;
+    color: #2F2F2F;
+    letter-spacing: 1px;
+}
+
+.copy{
+    font-size: 10px;
+    padding-top: 30px;
+}
+
+/*-------------Ranking Page----------------*/
+
+.rank p{
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.rank-img{
+    padding-top: 20px;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.rank-img img{
+    width: 100%; 
+}
+
+/*----------------Search box CSS-------------------*/
+
+.search-contant{
+    padding: 30px;
+}
+
+.search-box{
+    display: flex;
+}
+
+.input-search{
+    position: relative;
+    margin-left: 30px;
+}
+
+.input-search input{
+    width:100%;
+    border: none;
+    padding: 5px 30px 10px 5px;
+    border-bottom: solid 1px;
+}
+
+.input-search i{
+    position: absolute;
+    top: 25%;
+    right: -30px;
+}
+
+.back a{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.loc-button{
+    margin-top: 30px;
+}
+
+.list ul
+{
+    list-style-type: none;
+    text-align: center;
+    margin: 30px;
+}
+
+.list li{
+    margin: 30px;
+    font-weight: 1000;
+}
+
+.rank{
+    position: relative;
+}
+
+
+.rank a{
+        position: absolute;
+        top: 15%;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+        font-size: 20px;
+        padding-top: 10px;
+}
